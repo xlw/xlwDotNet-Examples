@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="xlwDotNet" Version="20.8.16-DEVd0cc" />
+    <PackageReference Include="xlwDotNet" Version="0.0.0-DEV08221638" />
   </ItemGroup>
 
 

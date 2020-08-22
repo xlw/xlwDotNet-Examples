@@ -208,18 +208,13 @@ namespace Example
 
         }
 
-#if NETCOREAPP
-        [ExcelExport("Gets the thread id", volatileFlag = true)]
-#else
+
+
         [ExcelExport("Gets the thread id", volatileFlag = true, threadSafeFlag = true)]
-#endif
         public static double GetThreadId()
         {
-#if NETCOREAPP
-            throw new NotImplementedException("THREADSAFE NOT IMPLEMENTED IN netcore");
-#else
+
             return (double)Thread.CurrentThread.ManagedThreadId;
-#endif
         }
 
         [ExcelExport("return a string indicating datatype of OPER/OPER12 input")]
